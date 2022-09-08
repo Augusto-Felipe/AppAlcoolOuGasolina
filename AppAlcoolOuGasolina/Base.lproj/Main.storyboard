@@ -1,24 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppAlcoolOuGasolina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hHa-7g-Bon">
+                                <rect key="frame" x="20" y="71" width="374" height="157"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço álcool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuM-RQ-Mqf">
+                                <rect key="frame" x="20" y="276" width="108" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço gasolina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0c-hN-ndg">
+                                <rect key="frame" x="265" y="276" width="129" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 1,99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xNz-u8-KNI">
+                                <rect key="frame" x="20" y="308" width="131" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="9xl-96-zTM"/>
+                                    <constraint firstAttribute="width" constant="131" id="Hlr-Ft-cAx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 2,99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6vr-eh-MKX">
+                                <rect key="frame" x="263" y="308" width="131" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="R3d-n7-iNK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fc-OH-g72">
+                                <rect key="frame" x="138" y="402" width="138" height="56"/>
+                                <color key="backgroundColor" red="0.40403208499999999" green="0.54896963239999996" blue="0.34843833460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="a1N-ha-OqR"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular">
+                                    <fontDescription key="titleFontDescription" name="AlNile" family="Al Nile" pointSize="27"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="botaoCalcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHC-6N-wIV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite os preços primeiro!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRQ-En-6bf">
+                                <rect key="frame" x="20" y="515" width="374" height="47"/>
+                                <color key="backgroundColor" red="0.67585835220000001" green="0.91830754280000004" blue="0.58286202359999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="pOE-lQ-6jg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="hHa-7g-Bon" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="2UI-L0-Ub2"/>
+                            <constraint firstItem="hHa-7g-Bon" firstAttribute="leading" secondItem="OuM-RQ-Mqf" secondAttribute="leading" id="HOX-Xh-naY"/>
+                            <constraint firstItem="8fc-OH-g72" firstAttribute="top" secondItem="xNz-u8-KNI" secondAttribute="bottom" constant="60" id="IYM-KD-MKl"/>
+                            <constraint firstItem="M0c-hN-ndg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OuM-RQ-Mqf" secondAttribute="trailing" constant="8" symbolic="YES" id="Igy-6g-8jB"/>
+                            <constraint firstItem="xNz-u8-KNI" firstAttribute="top" secondItem="6vr-eh-MKX" secondAttribute="top" id="a1N-6i-g3w"/>
+                            <constraint firstItem="8fc-OH-g72" firstAttribute="centerX" secondItem="DRQ-En-6bf" secondAttribute="centerX" id="aE5-tJ-PEs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DRQ-En-6bf" secondAttribute="bottom" constant="300" id="aPv-d1-ISZ"/>
+                            <constraint firstItem="hHa-7g-Bon" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bkK-ds-rPX"/>
+                            <constraint firstItem="hHa-7g-Bon" firstAttribute="trailing" secondItem="M0c-hN-ndg" secondAttribute="trailing" id="bpE-sU-QoP"/>
+                            <constraint firstItem="M0c-hN-ndg" firstAttribute="trailing" secondItem="6vr-eh-MKX" secondAttribute="trailing" id="bqp-jN-gqj"/>
+                            <constraint firstItem="6vr-eh-MKX" firstAttribute="trailing" secondItem="DRQ-En-6bf" secondAttribute="trailing" id="dKL-mW-Inc"/>
+                            <constraint firstItem="OuM-RQ-Mqf" firstAttribute="top" secondItem="hHa-7g-Bon" secondAttribute="bottom" constant="48" id="f55-eO-Aud"/>
+                            <constraint firstItem="DRQ-En-6bf" firstAttribute="top" secondItem="8fc-OH-g72" secondAttribute="bottom" constant="57" id="hFJ-lH-i5L"/>
+                            <constraint firstItem="8fc-OH-g72" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="i0o-Fc-VHr"/>
+                            <constraint firstItem="OuM-RQ-Mqf" firstAttribute="leading" secondItem="xNz-u8-KNI" secondAttribute="leading" id="jh3-fC-a8S"/>
+                            <constraint firstItem="OuM-RQ-Mqf" firstAttribute="baseline" secondItem="M0c-hN-ndg" secondAttribute="baseline" id="lQM-yT-s9k"/>
+                            <constraint firstItem="hHa-7g-Bon" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nDw-0C-PnC"/>
+                            <constraint firstItem="xNz-u8-KNI" firstAttribute="top" secondItem="OuM-RQ-Mqf" secondAttribute="bottom" constant="8" id="nzp-gx-opC"/>
+                            <constraint firstItem="M0c-hN-ndg" firstAttribute="baseline" secondItem="OuM-RQ-Mqf" secondAttribute="firstBaseline" id="pkQ-J2-5ap"/>
+                            <constraint firstItem="xNz-u8-KNI" firstAttribute="leading" secondItem="DRQ-En-6bf" secondAttribute="leading" id="yPx-xG-SeD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="precoAlcoolCampo" destination="xNz-u8-KNI" id="3b3-S5-0L5"/>
+                        <outlet property="precoGasolinaCampo" destination="6vr-eh-MKX" id="AHV-3R-HbZ"/>
+                        <outlet property="resultadoLegenda" destination="DRQ-En-6bf" id="7vD-mJ-8Kr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="99.776785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="407" height="106"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
